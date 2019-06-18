@@ -14,6 +14,7 @@ describe("Nim Game", function() {
         it("should increase nimstaken from 0 to 1", function() {
             var result = this.nimstaken
             expect(result).toBe(1);
+            return 1;
         });
     });
 
