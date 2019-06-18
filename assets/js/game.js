@@ -1,6 +1,8 @@
 var nimstaken = 0;
 
 easyNimGame = function() {
+    // Increase number of counters taken
     nimstaken ++;
-    console.log(nimstaken);
+    // document.getElementById("nimstaken").innerHTML = nimstaken;
+   
     };
