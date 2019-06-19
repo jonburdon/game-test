@@ -2,30 +2,53 @@ describe("Nim Game", function() {
 
     describe("Checks Easy Nim game has code", function() {
         it("should exist", function() {
-            expect(easyNimGame).toBeDefined();
+            expect(increaseCountersTaken).toBeDefined();
         });
     });
     
     describe("Checks Easy Nim Game increases Nims taken by 1", function() {
-
-        beforeEach(function(){
-
-            // easyNimGame = new easyNimGame();
-
-            setFixtures(`<div id="nimstaken"></div>`);
-        })
-
         it("should increase nimstaken from 0 to 1", function() {
-            //arrange
-            easyNimGame();
             
-            //act
-            var result = nimstaken;
-            
-            //assert
+            var result increaseCountersTaken(0)
+
             expect(result).toBe(1);
         });
     });
     
     
     });
+
+
+
+//OLD VERSION//
+// describe("Nim Game", function() {
+
+//     describe("Checks Easy Nim game has code", function() {
+//         it("should exist", function() {
+//             expect(easyNimGame).toBeDefined();
+//         });
+//     });
+    
+//     describe("Checks Easy Nim Game increases Nims taken by 1", function() {
+
+//         beforeEach(function(){
+
+//             // easyNimGame = new easyNimGame();
+
+//             setFixtures(`<div id="nimstaken"></div>`);
+//         })
+
+//         it("should increase nimstaken from 0 to 1", function() {
+//             //arrange
+//             easyNimGame();
+            
+//             //act
+//             var result = nimstaken;
+            
+//             //assert
+//             expect(result).toBe(1);
+//         });
+//     });
+    
+    
+//     });
