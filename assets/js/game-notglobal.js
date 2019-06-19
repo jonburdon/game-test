@@ -9,9 +9,9 @@ var nimGame = (function () {
     
         var nimstaken = 0;
 
-        easyNimGame = function () {
-            console.log(nimstaken);
-            nimstaken++;
+        increaseCountersTaken = function (counts) {
+            counts++;
+            return counts;
         };
 
 
