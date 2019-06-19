@@ -10,7 +10,7 @@ describe("Nim Game", function() {
         
 
         beforeEach(function(){
-            setFixtures(`<div id="nimstaken"></div>`)
+            setFixtures(`<div id="nimstaken"></div>`);
         })
 
         it("should increase nimstaken from 0 to 1", function() {
