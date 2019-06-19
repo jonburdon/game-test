@@ -1,4 +1,4 @@
-var nimstaken = 0;
+// var nimstaken = 0;
 
 easyNimGame = function() {
     // Increase number of counters taken

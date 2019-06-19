@@ -2,9 +2,17 @@
 
 NimGame = function() {
 
+    var nimstaken; // Keep track of how many nims have been taken in this turn
+    var p1turn; // Keep track of whose turn it is
+    var nimsinplay; // Keep track of overall number of nims
+
+
+beginGame = function() {
     var nimstaken = 0; // Keep track of how many nims have been taken in this turn
     var p1turn = true; // Keep track of whose turn it is
     var nimsinplay = 21; // Keep track of overall number of nims
+
+}
 
 increaseNimsTaken = function() {
 //Display number of nims
