@@ -33,7 +33,7 @@ reduceOverallNims = function() {
     document.getElementById("nimnumber").innerHTML = nimsinplay;
 }
 
-passPlayOrNot = function {
+passPlayOrNot = function(){
 // Pass play to other player after three counters taken
 
 if (nimstaken === 3) {
@@ -51,7 +51,7 @@ if (nimstaken === 3) {
 }
 }
 
-checkForWin = function {
+checkForWin = function() {
     // Check for win
 
     if (nimsinplay === 0) {
