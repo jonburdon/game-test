@@ -7,15 +7,13 @@ describe("Nim Game", function() {
     });
     
     describe("Checks Easy Nim Game increases Nims taken by 1", function() {
-        
-        
 
-        beforeEach(function(){
+        // beforeEach(function(){
 
-            easyNimGame = new easyNimGame();
-            
-            setFixtures(`<div id="nimstaken"></div>`);
-        })
+        //     easyNimGame = new easyNimGame();
+
+        //     setFixtures(`<div id="nimstaken"></div>`);
+        // })
 
         it("should increase nimstaken from 0 to 1", function() {
             //arrange
