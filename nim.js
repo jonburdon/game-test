@@ -56,3 +56,8 @@ PassTurn = function() {
 
     // Allow play to be passed to other player
 }
+
+
+reportScore = function(target, score) {
+    document.getElementById(target).innerHTML = score;
+}
