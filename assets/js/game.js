@@ -23,26 +23,27 @@ reportScore = function (target, score) {
     };
     
     
-    // -*- checkPassTurn Pass turn to other player after three counters taken
-    
-    checkPassTurn = function (takenThisTurn) {
-        if (takenThisTurn === 3) {
-            return true;
-        } else {
-            return false;
+// -*- checkPassTurn Pass turn to other player after three counters taken
+var whoseTurn = 1;
+var countersTakenThisTurn = 3;
+
+checkPassTurn = function (takenThisTurn) {
+    if (takenThisTurn === 3) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// -*- switchPlayer Switches Player if checkPassTurn returns True
+
+switchPlayer = function (currentPlayer) {
+    var check = checkPassTurn(countersTakenThisTurn);
+    if (check === true) {
+        if (currentPlayer === 1) {
+            return 2;
         }
-    }
-    
-    // -*- switchPlayer Switches Player if checkPassTurn returns True
-    
-    switchPlayer = function (currentPlayer) {
-        var check = checkPassTurn(3); // *** Pass this the variable for number of counters taken this turn.
-        if (check = true) {
-            if (currentPlayer = 1) {
-                return 2;
-            }
-        } else {return 1}
-    }
-    
+    } else {return 1}
+}
     
 
